@@ -20,7 +20,7 @@ class ProfilePic extends React.Component {
             e.preventDefault();
             const dlBtn = document.getElementById("dlBtn")
 
-            if (this.state.username == "") {
+            if (this.state.username === "") {
                 alert("Please enter a username");
             }
             else {
@@ -42,11 +42,11 @@ class ProfilePic extends React.Component {
         return (
             <div>
                 <form onSubmit={onSubmit}>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">@</span>
+                    <div className="input-group mb-3">
+                        <div className="input-group-prepend">
+                            <span className="input-group-text" id="basic-addon1">@</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" onChange={value => {
+                        <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" onChange={value => {
                             this.setState({
                                 name: "",
                                 profileHD: "",
@@ -55,7 +55,7 @@ class ProfilePic extends React.Component {
                         }
                         } />
                     </div>
-                    <a href="" id='dlBtn'><button type="submit" class="btn btn-primary">Download</button></a>
+                    <a href="" id='dlBtn'><button type="submit" className="btn btn-primary">Download</button></a>
                 </form>
 
             </div>
